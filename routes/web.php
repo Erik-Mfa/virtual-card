@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\JohnController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +17,4 @@ use Illuminate\Support\Facades\Route;
 Route::redirect('/', '/generate');
 Route::view('/generate', '/generate');
 
-Route::get('/john', function () {
-    return 'aaa';
-})->name('john');
+Route::get('/john', [JohnController::class, 'index']);
