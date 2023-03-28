@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::redirect('/', '/generate');
+Route::view('/generate', '/generate');
+
+Route::get('/john', function () {
+    return 'aaa';
+})->name('john');
