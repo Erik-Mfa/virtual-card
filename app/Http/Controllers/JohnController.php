@@ -10,41 +10,11 @@ class JohnController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function show()
     {
-        $john = John::all();
-        dd($john);
+        $john = John::find(2);
+
+        return view ('john', compact('john'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(John $john)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, John $john)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(John $john)
-    {
-        //
-    }
 }

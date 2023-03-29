@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\JohnController;
+use App\Http\Controllers\QRcodeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,6 +16,10 @@ use App\Http\Controllers\JohnController;
 */
 
 Route::redirect('/', '/generate');
-Route::view('/generate', '/generate');
 
-Route::get('/john', [JohnController::class, 'index']);
+//rotas página de gerar QR code
+Route::get('/generate', [QRcodeController::class, 'show'])->name('john');
+Route::post('/generate', [QRcodeController::class, 'generate'])->name('john.generate');
+
+//rotas página sobre o John
+Route::get('/john', [JohnController::class, 'show'])->name('john');
