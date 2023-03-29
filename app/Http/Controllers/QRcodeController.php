@@ -11,11 +11,11 @@ class QRcodeController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function show()
+    public function show($qrcode = 0)
     {
         $john = John::find(1);
         
-        return view ('generate', compact('john'));
+        return view ('generate', compact('john','qrcode'));
     }
 
     public function generate(Request $request)
@@ -24,6 +24,7 @@ class QRcodeController extends Controller
             ->where('id', 1)
             ->update(['nome' => $request->nome, 'linkedin' => $request->linkedin , 'github' => $request->github]);
         
+        return redirect()->route('generate.show', ['qrcode' => 'ok']);
     }
 
 }

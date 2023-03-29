@@ -8,7 +8,7 @@
     <script src="http://cdn.tailwindcss.com"></script>
 </head>
 <body>
-
+<!-- Card de apresentação do John -->
 <div class="flex flex-col justify-center items-center mt-6">
 
     <div class="overflow-hidden bg-white shadow sm:rounded-lg ">
@@ -16,6 +16,7 @@
         <h3 class="text-base font-semibold leading-6 text-gray-900">Hi, my name is {{ $john->nome }} </h3>
         <p class="mt-1 max-w-2xl text-sm text-gray-500">Here you can find more about me!</p>
     </div>
+
     <div class="border-t border-gray-200">
         <dl>
         <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
@@ -33,7 +34,6 @@
         </dl>
     </div>
     </div>
-
 </div>
 </body>
 </html>

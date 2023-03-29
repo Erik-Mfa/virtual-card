@@ -12,7 +12,7 @@ class JohnController extends Controller
      */
     public function show()
     {
-        $john = John::find(2);
+        $john = John::find(1);
 
         return view ('john', compact('john'));
     }
