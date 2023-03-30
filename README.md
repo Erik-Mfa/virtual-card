@@ -9,9 +9,9 @@
 
 ## About the project
 
-This project is used to generate a QR Code that takes you to a custom page abot John personal information, to be more specifc his business card
-The application was made using Laravel and Tailwind CSS
-For the project build, it was used Docker, Composer and NPM
+This project is used to generate a QR Code that takes you to a custom page abot John personal information, to be more specifc his business card<br>
+The application was made using Laravel and Tailwind CSS<br>
+For the project build, it was used Laravel Sail and Docker<br>
 The Database is SQLite, the DB is located at database/database.sqlite
 
 ## What you need for this project
