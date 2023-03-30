@@ -10,6 +10,7 @@ class JohnController extends Controller
     /**
      * Display a listing of the resource.
      */
+    //method that shows john's data on john page
     public function show()
     {
         $john = John::find(1);

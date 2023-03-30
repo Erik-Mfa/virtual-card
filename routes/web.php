@@ -18,7 +18,7 @@ use App\Http\Controllers\QRcodeController;
 
 Route::redirect('/', '/generate');
 
-//rotas página que gera QR code
+//rota página que gera QR code e passa o parâmetro para definir se o botão de gerar o QR code já foi apertado
 Route::get('/generate/{qrcode?}', [QRcodeController::class, 'show'])->name('generate.show');
 Route::post('/generate', [QRcodeController::class, 'generate'])->name('generate.update');
 

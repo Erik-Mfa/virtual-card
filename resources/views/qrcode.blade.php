@@ -1,4 +1,5 @@
 
+<!-- se o botão for apertado uma vez esta view será gerada -->
 <div class="flex justify-center items-center flex flex-row sm:border-2 sm:border-black p-6">
   <div
     class="mb-4 rounded-lg bg-[#86efac] py-4 px-6 text-black font-bold mr-6 sm:visible invisible"

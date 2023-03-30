@@ -6,6 +6,7 @@
 <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 <title>Generate QR Code</title>
 <script src="http://cdn.tailwindcss.com"></script>
+<!-- import do Tailwind -->
 </head>
 <body>
 

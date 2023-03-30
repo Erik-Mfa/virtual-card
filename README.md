@@ -20,12 +20,22 @@ To run your project first you'll need to have Docker installed at your machine <
 When using Windows, you'll have to install WSL2 to run Docker Desktop<br>
 Also you are going to need to have Composer installed
 
-After installed, you just have to run your Sail command to generate the docker images and run it
-First type: "composer update" to create all your dependencies
+After installed, you have to generate the docker images and run it
+
+First access your application directory and type:<br>
+    docker run --rm \
+    -u "$(id -u):$(id -g)" \
+    -v "$(pwd):/var/www/html" \
+    -w /var/www/html \
+    laravelsail/php82-composer:latest \
+    composer install --ignore-platform-reqs
 
 After that type: "./vendor/bin/sail up -d" to generate the images and also run your container on background
 
+Add the .env.example to your .env file
+
 Type: "php artisan db:seed" to generate new entries on your Database
+
 
 ## How it works?
 

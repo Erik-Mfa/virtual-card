@@ -13,6 +13,7 @@ class JohnsSeeder extends Seeder
      */
     public function run(): void
     {
+        // insere os dados do John através do seed
         John::create([
             'nome' => 'John',
             'linkedin' => 'https://www.linkedin.com/in/erik-matos-freitas-araujo-5b29301b7/',

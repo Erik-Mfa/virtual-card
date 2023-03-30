@@ -11,6 +11,8 @@ class QRcodeController extends Controller
     /**
      * Display a listing of the resource.
      */
+
+    // method that shows john's data on the form
     public function show($qrcode = 0)
     {
         $john = John::find(1);
@@ -18,6 +20,7 @@ class QRcodeController extends Controller
         return view ('generate', compact('john','qrcode'));
     }
 
+    // update john's data for the QR code redirect page
     public function generate(Request $request)
     {
         DB::table('johns')
