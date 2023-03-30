@@ -18,43 +18,27 @@ The Database is SQLite, the DB is located at database/database.sqlite
 
 To run your project first you'll need to have Docker installed at your machine
 When using Windows, you'll have to install WSL2 to run Docker Desktop
+Also you are going to need to have Composer installed
 
-If already installed, you just have to run:
-docker build https://github.com/Erik-Mfa/virtual-card.git#container:docker
+After installed, you just have to run your Sail command to generate the docker images and run it
+First type: "composer update" to create all your dependencies
+
+After that type: "./vendor/bin/sail up -d" to generate the images and also run your container on background
+
+Type: "php artisan db:seed" to generate new entries on your Database
+
+## How it works?
+
+First we have a form that contains the information about John, like he's name, linkedin and github URL's. Thats the information that is going to be in the John's business card
+
+<img src="/public/images/virtual-card-form.png" width="400" alt="form">
+
+When all the input value changes are done, you can press the "Generate" button to change John's information and generate the QR Code
+
+<img src="/public/images/qrcode.png" width="400" alt="qrcode">
+
+After generate the QR Code, it's possible to scann it with your mobile phone, that is going to lead you to John's personal page with all the information that you changed in the form
+
+<img src="/public/images/business-card.png" width="400" alt="card">
 
 
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
