@@ -48,4 +48,8 @@ After generate the QR Code, it's possible to scann it with your mobile phone, th
 
 <img src="/public/images/business-card.jpg" width="400" alt="card">
 
+## Online APP?
 
+I also hosted my application on a platform called Railway<br>
+The app is going to be online sometimes, might check ;)
+https://virtual-card-production.up.railway.app/
