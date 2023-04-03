@@ -23,19 +23,16 @@ Also you are going to need to have Composer installed
 After installed, you have to generate the docker images and run it
 
 First access your application directory and type:<br>
-    docker run --rm \
-    -u "$(id -u):$(id -g)" \
-    -v "$(pwd):/var/www/html" \
-    -w /var/www/html \
-    laravelsail/php82-composer:latest \
-    composer install --ignore-platform-reqs
+docker run --rm \
+-u "$(id -u):$(id -g)" \
+-v "$(pwd):/var/www/html" \
+-w /var/www/html \
+laravelsail/php82-composer:latest \
+composer install --ignore-platform-reqs
 
 After that type: "./vendor/bin/sail up -d" to generate the images and also run your container on background
 
-Add the .env.example to your .env file
-
-Type: "php artisan db:seed" to generate new entries on your Database
-
+Add a new file named .env, and copy all the code from the .env.example to it
 
 ## How it works?
 
