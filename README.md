@@ -9,21 +9,20 @@
 
 ## About the project
 
-This project is used to generate a QR Code that takes you to a custom page abot John personal information, to be more specifc his business card<br>
+This project is used to generate a QR Code that takes you to a custom page about John's informations, to be more specifc his business card<br>
 The application was made using Laravel and Tailwind CSS<br>
 For the project build, it was used Laravel Sail and Docker<br>
 The Database is SQLite, the DB is located at database/database.sqlite
 
 ## What you need for this project
 
-To run your project first you'll need to have Docker installed in your machine <br>
-If you're using Windows, you'll have to install WSL2 to run Docker Desktop<br>
+To run your project first you'll need to have Docker installed in your machine<br>
+If you're using Windows, you have to install WSL2 to run Docker Desktop<br>
 
-After installed, you have to generate the docker images and run it<br>
+After installed, you have to generate the docker images to run it<br>
 But for that you need Laravel Sail and Composer installed<br>
-For this just follow the steps:
 
-First access the application directory and type:<br>
+For this, first access the application directory and type:<br>
 docker run --rm \
 -u "$(id -u):$(id -g)" \
 -v "$(pwd):/var/www/html" \
