@@ -16,13 +16,14 @@ The Database is SQLite, the DB is located at database/database.sqlite
 
 ## What you need for this project
 
-To run your project first you'll need to have Docker installed at your machine <br>
-When using Windows, you'll have to install WSL2 to run Docker Desktop<br>
-Also you are going to need to have Composer installed
+To run your project first you'll need to have Docker installed in your machine <br>
+If you're using Windows, you'll have to install WSL2 to run Docker Desktop<br>
 
-After installed, you have to generate the docker images and run it
+After installed, you have to generate the docker images and run it<br>
+But for that you need Laravel Sail and Composer installed<br>
+For this just follow the steps:
 
-First access your application directory and type:<br>
+First access the application directory and type:<br>
 docker run --rm \
 -u "$(id -u):$(id -g)" \
 -v "$(pwd):/var/www/html" \
@@ -50,6 +51,6 @@ After generate the QR Code, it's possible to scann it with your mobile phone, th
 
 ## Online APP
 
-I also hosted my application on a platform called Railway<br>
-The app is going to be online sometimes, might check ;)
+I also hosted my application in a platform called Railway<br>
+The app is going to be online sometimes, might check ;)<br>
 https://virtual-card-production.up.railway.app/
