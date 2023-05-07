@@ -38,15 +38,15 @@ Add a new file named .env, and copy all the code from the .env.example to it
 
 First we have a form that contains the information about John, like he's name, linkedin and github URL's. Thats the information that is going to be in the John's business card
 
-<img src="/public/images/virtual-card-form.png" width="400" alt="form">
+<img src="/public/assets/images/virtual-card-form.png" width="400" alt="form">
 
 When all the input value changes are done, you can press the "Generate" button to change John's information and generate the QR Code
 
-<img src="/public/images/qrcode.png" width="400" alt="qrcode">
+<img src="/public/assets/images/qrcode.png" width="400" alt="qrcode">
 
 After generate the QR Code, it's possible to scann it with your mobile phone, that is going to lead you to John's personal page with all the information that you changed in the form
 
-<img src="/public/images/business-card.jpg" width="400" alt="card">
+<img src="/public/assets/images/business-card.jpg" width="400" alt="card">
 
 ## Online APP
 
